@@ -13,6 +13,7 @@ public class ManaRegenerator : MonoBehaviour
 
     private void Start()
     {
+        _Mana.Value = _Mana.MaxValue;
         InvokeRepeating("Regenerate", _Rate, _Rate);
     }
 
