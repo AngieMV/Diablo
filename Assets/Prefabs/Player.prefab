@@ -48,7 +48,7 @@ MonoBehaviour:
     type: 3}
   _Parent: {fileID: 11400000, guid: 7be4f383a71cb8b41aa7011ed2a07ede, type: 2}
   _Mana: {fileID: 11400000, guid: 97d459f0d6a34724898e621894dcf61e, type: 2}
-  _FiringCost: 5
+  _FiringCost: 0.05
 --- !u!114 &4053426235061612250
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62,7 +62,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Mana: {fileID: 11400000, guid: 97d459f0d6a34724898e621894dcf61e, type: 2}
-  _Amount: 5
+  _Amount: 0.05
   _Rate: 1
 --- !u!1 &770511820476086597
 GameObject:
@@ -80,6 +80,8 @@ GameObject:
   - component: {fileID: 1817203906}
   - component: {fileID: 558821102350041546}
   - component: {fileID: 635677405216841240}
+  - component: {fileID: 1262234938857546267}
+  - component: {fileID: 7346719005878998748}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -221,3 +223,33 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Health: {fileID: 11400000, guid: bc02a6c069c47e94e89a5851396d920c, type: 2}
+--- !u!114 &1262234938857546267
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770511820476086597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86345d8d4a5fe8c40a3b8afaae512cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Canvas: {fileID: 0}
+  _Bar: {fileID: 6732103550855757128, guid: 51a5f711a8d4fb347a7f04513c81e3b5, type: 3}
+  _Offset: {x: 0, y: 0, z: 2}
+--- !u!114 &7346719005878998748
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 770511820476086597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86345d8d4a5fe8c40a3b8afaae512cf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Canvas: {fileID: 0}
+  _Bar: {fileID: 6303512390157228947, guid: 4e0ee542f5ab30248863ad182543df85, type: 3}
+  _Offset: {x: 0, y: 0, z: 1}

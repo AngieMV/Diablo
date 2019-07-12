@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 763e2d90a8a779a4cb9770d02d107af2, type: 3}
   m_Name: Float_Mana
   m_EditorClassIdentifier: 
-  _Value: 80
+  _Value: 1
   MinValue: 0
-  MaxValue: 100
+  MaxValue: 1
