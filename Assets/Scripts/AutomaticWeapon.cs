@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Weapon : MonoBehaviour
+public class AutomaticWeapon : MonoBehaviour
 {
     [SerializeField]
     private GameObject _ProjectilePrefab;

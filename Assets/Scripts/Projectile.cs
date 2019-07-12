@@ -3,10 +3,10 @@
 public class Projectile : MonoBehaviour
 {
     [SerializeField]
-    private float _Velocity; 
+    private float _Velocity;
     
     [SerializeField]
-    private float _LifeTime;    
+    private float _LifeTime;
 
     private Rigidbody _RigidBody;
 

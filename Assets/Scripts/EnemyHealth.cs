@@ -5,7 +5,7 @@ public class EnemyHealth : Health
     private float _Health;
 
     [SerializeField]
-    private float _MaxValue = 100;
+    private float _MaxValue = 10;
 
     [SerializeField]
     private float _MinValue = 0;
@@ -21,7 +21,7 @@ public class EnemyHealth : Health
 
         if (_Health <= _MinValue)
         {
-            _Health = _MinValue;
+            Destroy(gameObject);
         }
     }
 }

@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 68687713}
   - component: {fileID: 68687714}
   m_Layer: 0
-  m_Name: Weapon
+  m_Name: AutomaticWeapon
   m_TagString: Untagged
   m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
@@ -45,7 +45,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _ProjectilePrefab: {fileID: 1181585378747229308, guid: b076c949e554f434bb5ee7c7ac326de3,
     type: 3}
-  _FireCooldown: 0.25
+  _FireCooldown: 0.5
   _TargetPosition: {fileID: 11400000, guid: 7be4f383a71cb8b41aa7011ed2a07ede, type: 2}
   _MinDistance: 20
 --- !u!1 &945802993941080624
@@ -62,13 +62,14 @@ GameObject:
   - component: {fileID: 945802993941080625}
   - component: {fileID: 945802993941080590}
   - component: {fileID: 945802993941080589}
+  - component: {fileID: 1522027101}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &945802993941080588
 Transform:
   m_ObjectHideFlags: 0
@@ -177,3 +178,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _PlayerTransform: {fileID: 11400000, guid: 7be4f383a71cb8b41aa7011ed2a07ede, type: 2}
+--- !u!114 &1522027101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 945802993941080624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ef2c66527cd68e4896785af4d570b39, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _MaxValue: 10
+  _MinValue: 0

@@ -1,5 +1,69 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1292060097
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1292060098}
+  - component: {fileID: 1292060099}
+  - component: {fileID: 4053426235061612250}
+  m_Layer: 0
+  m_Name: AssaultWeapon
+  m_TagString: Untagged
+  m_Icon: {fileID: 7866945982896999795, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1292060098
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292060097}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 1.01}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 770511820476086593}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1292060099
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292060097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 22f8b3a48fce9324399cada995fa5839, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _ProjectilePrefab: {fileID: 1181585378747229308, guid: b076c949e554f434bb5ee7c7ac326de3,
+    type: 3}
+  _Parent: {fileID: 11400000, guid: 7be4f383a71cb8b41aa7011ed2a07ede, type: 2}
+  _Mana: {fileID: 11400000, guid: 97d459f0d6a34724898e621894dcf61e, type: 2}
+  _FiringCost: 5
+--- !u!114 &4053426235061612250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292060097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 382980fda501c7249a45970aabe97890, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _Mana: {fileID: 11400000, guid: 97d459f0d6a34724898e621894dcf61e, type: 2}
+  _Amount: 5
+  _Rate: 1
 --- !u!1 &770511820476086597
 GameObject:
   m_ObjectHideFlags: 0
@@ -13,7 +77,6 @@ GameObject:
   - component: {fileID: 770511820476086599}
   - component: {fileID: 770511820476086598}
   - component: {fileID: 1817203907}
-  - component: {fileID: 770511820476086595}
   - component: {fileID: 1817203906}
   - component: {fileID: 558821102350041546}
   - component: {fileID: 635677405216841240}
@@ -34,7 +97,8 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1292060098}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -107,7 +171,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 10
+  m_Speed: 15
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -119,21 +183,6 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &770511820476086595
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 770511820476086597}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 382980fda501c7249a45970aabe97890, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _Mana: {fileID: 11400000, guid: 97d459f0d6a34724898e621894dcf61e, type: 2}
-  _Amount: 5
-  _Rate: 1
 --- !u!114 &1817203906
 MonoBehaviour:
   m_ObjectHideFlags: 0
