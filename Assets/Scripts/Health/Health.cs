@@ -1,6 +1,20 @@
 ﻿using UnityEngine;
 
-public abstract class Health : MonoBehaviour
+public class Health : MonoBehaviour
 {
-    public abstract void TakeDamage(float amount);
+    [SerializeField]
+    private HealthValue _Health;
+
+    [SerializeField]
+    public DestroyableAction _DestroyAction;
+
+    public void TakeDamage(float amount)
+    {
+        _Health.Data.Value -= amount;
+
+        if (_Health == null || _Health.Data.Value <= _Health.Data.MinValue)
+        {
+            _DestroyAction.DestroyObject();
+        }
+    }
 }
