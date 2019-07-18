@@ -3,7 +3,6 @@ using UnityEngine.UI;
 
 public class BarUpdater : MonoBehaviour
 {
-    [SerializeField]
     private Canvas _Canvas;
 
     [SerializeField]
@@ -16,6 +15,7 @@ public class BarUpdater : MonoBehaviour
 
     private void Start()
     {
+        _Canvas = FindObjectOfType<Canvas>();
         _Image = Instantiate(_Bar, _Canvas.transform).GetComponent<Image>();
     }
 

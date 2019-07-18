@@ -234,7 +234,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 86345d8d4a5fe8c40a3b8afaae512cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _Canvas: {fileID: 0}
   _Bar: {fileID: 6386117950085342841}
   _Offset: {x: 0, y: 0, z: 0}
 --- !u!1001 &418044157017332529
@@ -357,6 +356,11 @@ PrefabInstance:
     - target: {fileID: 4973809852339002744, guid: 51a5f711a8d4fb347a7f04513c81e3b5,
         type: 3}
       propertyPath: _HealthValue
+      value: 
+      objectReference: {fileID: 5668463619091395559}
+    - target: {fileID: 8211064754756071632, guid: 51a5f711a8d4fb347a7f04513c81e3b5,
+        type: 3}
+      propertyPath: _Health
       value: 
       objectReference: {fileID: 5668463619091395559}
     m_RemovedComponents: []
