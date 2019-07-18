@@ -433,7 +433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _Transform: {fileID: 11400000, guid: 7be4f383a71cb8b41aa7011ed2a07ede, type: 2}
   _Smoothing: 10
-  offset: {x: 0, y: 30, z: -5}
+  _Offset: {x: 0, y: 18, z: 0}
 --- !u!1 &1006150011
 GameObject:
   m_ObjectHideFlags: 0
