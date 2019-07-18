@@ -15,12 +15,12 @@ public class CameraFollow : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (this._Transform == null || this._Transform.Value == null)
+        if (_Transform == null || _Transform.Value == null)
         {
             return;
         }
 
-        Vector3 targetPosition = this._Transform.Value.position + this._Offset + this._PlayerCameraControlOffset;
-        this.transform.position = Vector3.Lerp(this.transform.position, targetPosition, this._Smoothing * Time.deltaTime);
+        Vector3 targetPosition = _Transform.Value.position + _Offset + _PlayerCameraControlOffset;
+        transform.position = Vector3.Lerp(transform.position, targetPosition, _Smoothing * Time.deltaTime);
     }
 }

@@ -5,11 +5,11 @@ using UnityEngine;
 public class DestroyBar : MonoBehaviour
 {
     [SerializeField]
-    private HealthValue health;
+    private HealthValue _Health;
 
     private void Update() 
     {
-        if (health == null)
+        if (_Health == null)
         {
             Destroy(gameObject);
         }    
