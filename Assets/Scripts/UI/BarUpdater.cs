@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Used to set the status bar to the units.
+/// </summary>
 public class BarUpdater : MonoBehaviour
 {
     private Canvas _Canvas;

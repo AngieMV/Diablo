@@ -1,4 +1,6 @@
-﻿
+﻿/// <summary>
+/// Action to perform when the player is destroyed.
+/// </summary>
 public class PlayerDestroyableAction : DestroyableAction
 {
     private LoadSceneByName _LoadScene;

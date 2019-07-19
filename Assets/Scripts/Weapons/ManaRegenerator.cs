@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Replenishes mana over time.
+/// </summary>
 public class ManaRegenerator : MonoBehaviour
 {
     [SerializeField]

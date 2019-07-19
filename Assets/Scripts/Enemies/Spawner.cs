@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Spawn enemies into the scene.
+/// </summary>
 public class Spawner : MonoBehaviour
 {
     [SerializeField]

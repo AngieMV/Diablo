@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Encapsulates the mechanism to keep track of health data for the units.
+/// </summary>
 public class HealthValue : MonoBehaviour
 {
     private RefFloat _RefFloat;

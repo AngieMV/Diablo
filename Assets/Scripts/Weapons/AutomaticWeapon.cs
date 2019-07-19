@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Sets a weapon that shots every <see cref="_FireCooldown"/> seconds.
+/// </summary>
 public class AutomaticWeapon : MonoBehaviour
 {
     [SerializeField]

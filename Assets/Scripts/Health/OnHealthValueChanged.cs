@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
+/// <summary>
+/// Notify to the listeners when <see cref="HealthValue"/> is updated.
+/// </summary>
 public class OnHealthValueChanged : MonoBehaviour
 {
     [SerializeField]

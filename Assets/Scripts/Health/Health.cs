@@ -1,5 +1,8 @@
 ﻿using UnityEngine;
 
+/// <summary>
+/// Encapsulates <see cref="HealthValue"/> with unit's health data, and a <see cref="DestroyableAction"/> that defines how to perform when destroying this unit.
+/// </summary>
 public class Health : MonoBehaviour
 {
     [SerializeField]

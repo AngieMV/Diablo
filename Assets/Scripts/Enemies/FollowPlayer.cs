@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 
+/// <summary>
+/// Set the enemies target to follow into the scene.
+/// </summary>
 [RequireComponent(typeof(NavMeshAgent))]
 public class FollowPlayer : MonoBehaviour
 {

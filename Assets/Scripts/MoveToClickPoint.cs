@@ -1,6 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.AI;
 
+/// <summary>
+/// Used to move the player on the world.
+/// </summary>
 [RequireComponent(typeof(NavMeshAgent))]
 public class MoveToClickPoint : MonoBehaviour
 {

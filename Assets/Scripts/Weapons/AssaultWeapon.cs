@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
-
+/// <summary>
+/// Sets a weapon that shots if there is mana available.
+/// </summary>
 public class AssaultWeapon : MonoBehaviour
 {
     [SerializeField]
