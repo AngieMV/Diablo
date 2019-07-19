@@ -235,7 +235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Bar: {fileID: 6386117950085342841}
-  _Offset: {x: 0, y: 0, z: 0}
+  _Offset: {x: 0, y: 0, z: 1.25}
 --- !u!1001 &418044157017332529
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -243,16 +243,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 945802993941080588}
     m_Modifications:
-    - target: {fileID: 5030756639879517651, guid: 51a5f711a8d4fb347a7f04513c81e3b5,
-        type: 3}
-      propertyPath: health
-      value: 
-      objectReference: {fileID: 5668463619091395559}
-    - target: {fileID: 5030756639879517651, guid: 51a5f711a8d4fb347a7f04513c81e3b5,
-        type: 3}
-      propertyPath: _Health
-      value: 
-      objectReference: {fileID: 5668463619091395559}
     - target: {fileID: 6732103550855757128, guid: 51a5f711a8d4fb347a7f04513c81e3b5,
         type: 3}
       propertyPath: m_Name
@@ -369,6 +359,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 5668463619091395559}
     - target: {fileID: 8211064754756071632, guid: 51a5f711a8d4fb347a7f04513c81e3b5,
+        type: 3}
+      propertyPath: _Health
+      value: 
+      objectReference: {fileID: 5668463619091395559}
+    - target: {fileID: 5030756639879517651, guid: 51a5f711a8d4fb347a7f04513c81e3b5,
+        type: 3}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 5668463619091395559}
+    - target: {fileID: 5030756639879517651, guid: 51a5f711a8d4fb347a7f04513c81e3b5,
         type: 3}
       propertyPath: _Health
       value: 
